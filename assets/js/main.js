@@ -277,12 +277,11 @@ $("body").keydown(function(evento){
 $('#level-button').click(function(){
     $('#menu').hide();
     var levelEs = '<div id="espacioLevel"><input id="inputEspacio" placeholder="1-5" min="1" max="5" type=number></input><img id="imgAdorno" src="assets/img/chuck.png"><button id="btnLevel">Level</button><button id="btnCancel">Cancel</button><div>'
-    $('#tablero').append(levelEs);
     $('#espacioLevel').show();
-    $('btnCancel').click(function(){
+    $('#tablero').append(levelEs);
+    $('#btnCancel').click(function(){
         $('#menu').show();
         $('#espacioLevel').hide();
-        $("#espacioLevel").remove();
     })
 
 });
@@ -294,5 +293,6 @@ $('#instrucciones-button').click(function(){
     $('#tablero').append(instruccionesEspacio);
     $('#imgArrow').click(function(){
         $('#menu').show();
+        $('#instEspacio').hide();
     });    
 });
