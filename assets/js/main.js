@@ -281,7 +281,7 @@ $('#level-button').click(function(){
     $('#tablero').append(levelEs);
     $('#btnCancel').click(function(){
         $('#menu').show();
-        $('#espacioLevel').hide();
+        $('#espacioLevel').remove();
     })
 
 });
@@ -293,6 +293,6 @@ $('#instrucciones-button').click(function(){
     $('#tablero').append(instruccionesEspacio);
     $('#imgArrow').click(function(){
         $('#menu').show();
-        $('#instEspacio').hide();
+        $('#instEspacio').remove();
     });    
 });
